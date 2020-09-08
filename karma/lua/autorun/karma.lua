@@ -15,8 +15,7 @@ local function KT()
 		done while karma is off AND preserves their karma from before karma was disabled, so
 		you can't join an empty server for a free karma reset ]]
 		for k,v in ipairs(player.GetAll()) do
-				v:SetLiveKarma(v:GetBaseKarma())
-			end
+			v:SetLiveKarma(v:GetBaseKarma())
 		end
 	end
 	RunConsoleCommand("ttt_karma", "1")
