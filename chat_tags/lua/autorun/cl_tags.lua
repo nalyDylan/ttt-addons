@@ -12,7 +12,6 @@ else
 	hook.Add("OnPlayerChat", "Chat Tags", function(ply, Text, bTeam, bDead)
 		local tag = tags[ply:GetUserGroup()]
 		if tag ~= nil then
-			print("yep")
 			--in TTT you can be not dead if you're a spectator, working around weirdness
 			if ply:Team() == TEAM_SPEC and not bDead then
 				bDead = true
